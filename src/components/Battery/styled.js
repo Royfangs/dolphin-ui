@@ -43,15 +43,15 @@ export const WaveContainer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  height: 220px;
-  width: 140px;
+  height: ${({ height }) => height};
+  width: ${({ width }) => width};
   border-radius: 15px 15px 5px 5px;
   overflow: hidden;
 `;
 
 export const BatteryBody = styled.div`
   position: relative;
-  height: 220px;
+  height: ${({ height }) => height};
   box-sizing: border-box;
   border-radius: 15px 15px 5px 5px;
   box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.22);
