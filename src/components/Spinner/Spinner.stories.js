@@ -3,7 +3,7 @@ import { Spinner } from './Spinner';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Button',
+  title: 'Spinner',
   component: Spinner,
   decorators: [withKnobs],
 };
