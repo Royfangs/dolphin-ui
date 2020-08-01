@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, BatteryBody, WaveContainer, Header, Wave } from './styled';
 
-export const Battery = ({ width = '140px', height = '220px' }) => {
+const Battery = ({ width = '140px', height = '220px' }) => {
   return (
     <Container>
       <Header />
@@ -15,3 +15,5 @@ export const Battery = ({ width = '140px', height = '220px' }) => {
     </Container>
   );
 };
+
+export default Battery;

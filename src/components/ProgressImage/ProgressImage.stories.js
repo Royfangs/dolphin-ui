@@ -1,6 +1,7 @@
 import React from 'react';
-import { ProgressImage } from './ProgressImage';
 import { withKnobs, text, object } from '@storybook/addon-knobs';
+
+import ProgressImage from './ProgressImage';
 
 export default {
   title: 'ProgressImage',

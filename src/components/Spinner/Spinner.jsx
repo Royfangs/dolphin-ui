@@ -1,10 +1,9 @@
 import React from 'react';
 
 import { Loader } from './styled';
-
 import { convertMillisecondToSecond } from '../../ulti/convertMillisecondToSecond';
 
-export const Spinner = ({
+const Spinner = ({
   borderWidth = '16px',
   width = '80px',
   height = '80px',
@@ -25,3 +24,5 @@ export const Spinner = ({
     />
   );
 };
+
+export default Spinner;

@@ -1,7 +1,8 @@
 import React from 'react';
+
 import { Container, Dot } from './styled';
 
-export const WaveLoading = ({
+const WaveLoading = ({
   color = '#7ef9ff',
   containerWidth = '200px',
   dotNumber = 5,
@@ -25,3 +26,5 @@ export const WaveLoading = ({
     </Container>
   );
 };
+
+export default WaveLoading;

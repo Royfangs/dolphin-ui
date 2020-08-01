@@ -1,5 +1,6 @@
 import React from 'react';
-import { WaveLoading } from './WaveLoading';
+
+import WaveLoading from './WaveLoading';
 
 export default {
   title: 'WaveLoading',

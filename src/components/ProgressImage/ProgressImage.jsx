@@ -3,7 +3,7 @@ import React from 'react';
 import { useProgressImg } from './useProgressImg';
 import { Image } from './styled';
 
-export const ProgressImage = ({
+const ProgressImage = ({
   imgSrc,
   placeholderImgSrc,
   fallbackImgSrc,
@@ -20,3 +20,5 @@ export const ProgressImage = ({
 
   return <Image src={imageSrc} styles={styles} alt={alt} />;
 };
+
+export default ProgressImage;
