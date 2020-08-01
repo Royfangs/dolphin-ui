@@ -1,6 +1,6 @@
 import React from 'react';
 import { Spinner } from './Spinner';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, number } from '@storybook/addon-knobs';
 
 export default {
   title: 'Spinner',
@@ -15,5 +15,6 @@ export const spinner = () => (
     height={text('Height', '80px')}
     borderColor={text('Border color', '#f3f3f3')}
     circleColor={text('Circle color', '#3498db')}
+    spinTimeMillisecond={number('spinTimeMillisecond', 2000)}
   />
 );

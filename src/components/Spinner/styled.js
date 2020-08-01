@@ -18,5 +18,6 @@ export const Loader = styled.div`
   border-radius: 50%;
   width: ${({ width }) => width};
   height: ${({ height }) => height};
-  animation: ${spin} 2s linear infinite;
+  animation: ${spin} ${({ spinTimeSecond }) => `${spinTimeSecond}s`} linear
+    infinite;
 `;
