@@ -34,6 +34,7 @@ export const MenuContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  cursor: pointer;
 
   ${({ isMenuToggled }) => {
     return isMenuToggled && menuTransform();
