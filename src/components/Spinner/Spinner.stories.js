@@ -16,6 +16,6 @@ export const spinner = () => (
     height={text('Height', '80px')}
     borderColor={text('Border color', '#f3f3f3')}
     circleColor={text('Circle color', '#3498db')}
-    spinTimeMillisecond={number('spinTimeMillisecond', 2000)}
+    spinTimeMillisecond={number('Spin time millisecond', 2000)}
   />
 );
