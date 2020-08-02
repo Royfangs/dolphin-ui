@@ -4,27 +4,26 @@ import { Container, Dot } from './styled';
 
 const WaveLoading = ({
   color = '#7ef9ff',
-  containerWidth = '200px',
   dotNumber = 5,
-  dotWidth = '10px',
-  dotHeight = '10px',
+  dotWidth = 10,
+  dotHeight = 10,
 }) => {
-  return (
-    <Container>
-      {Array(dotNumber)
-        .fill(0)
-        .map((_, index) => (
-          <Dot
-            color={color}
-            containerWidth={containerWidth}
-            dotWidth={dotWidth}
-            dotHeight={dotHeight}
-            key={`dotIndex_${index}`}
-            dotIndex={index + 1}
-          />
-        ))}
-    </Container>
-  );
+  const renderDots = () => {
+    return Array(dotNumber)
+      .fill(0)
+      .map((_, index) => (
+        <Dot
+          color={color}
+          dotWidth={dotWidth}
+          dotHeight={dotHeight}
+          key={`dotIndex_${index}`}
+          dotIndex={index + 1}
+          totalDotNumber={dotNumber}
+        />
+      ));
+  };
+
+  return <Container>{renderDots()}</Container>;
 };
 
 export default WaveLoading;

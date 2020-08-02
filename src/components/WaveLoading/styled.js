@@ -13,7 +13,6 @@ const wave = keyframes`
 `;
 
 export const Container = styled.div`
-  width: ${({ containerWidth }) => containerWidth};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,8 +20,8 @@ export const Container = styled.div`
 
 export const Dot = styled.div`
   position: relative;
-  width: ${({ dotWidth }) => dotWidth};
-  height: ${({ dotHeight }) => dotHeight};
+  width: ${({ dotWidth }) => `${dotWidth}px`};
+  height: ${({ dotHeight }) => `${dotHeight}px`};
   margin: 5px;
   border-radius: 50%;
   background-color: ${({ color }) => color};
@@ -34,11 +33,12 @@ export const Dot = styled.div`
     height: 100%;
     background: inherit;
     border-radius: inherit;
-    animation: ${wave} 2s ease-out infinite;
+    animation: ${wave} ${({ totalDotNumber }) => `${totalDotNumber * 0.5}s`}
+      ease-out infinite;
   }
 
   ${({ dotIndex }) => {
-    const delay = `${dotIndex * 0.2}s`;
+    const delay = `${(dotIndex + 1) * 0.2}s`;
 
     return css`
       &:nth-child(${dotIndex}) {
