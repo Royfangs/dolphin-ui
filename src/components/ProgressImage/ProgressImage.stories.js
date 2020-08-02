@@ -5,7 +5,7 @@ import ProgressImage from './ProgressImage';
 import { imgSrc, placeholderImgSrc, fallbackImgSrc } from './constants';
 
 export default {
-  title: 'ProgressImage',
+  title: 'Progress image',
   component: ProgressImage,
   decorators: [withKnobs],
 };

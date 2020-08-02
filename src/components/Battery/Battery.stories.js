@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Battery from './';
+import Battery from './Battery';
 
 export default {
   title: 'Battery',
