@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Title = styled.div`
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 `;
 
 export const ExpandedIcon = styled.div`
