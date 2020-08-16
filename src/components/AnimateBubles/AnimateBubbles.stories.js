@@ -1,10 +1,10 @@
 import React from 'react';
 
-import AnimationBubblesWrapper from './';
+import AnimationBubbles from './';
 
 export default {
-  title: 'AnimationBubblesWrapper',
-  component: AnimationBubblesWrapper,
+  title: 'AnimationBubbles',
+  component: AnimationBubbles,
 };
 
 const bubbleStyles = { height: '110px', width: '110px', borderRadius: '50%' };
@@ -18,8 +18,5 @@ const initialImages = [
 ];
 
 export const animationBubblesWrapper = () => (
-  <AnimationBubblesWrapper
-    bubbleStyles={bubbleStyles}
-    initialImages={initialImages}
-  />
+  <AnimationBubbles bubbleStyles={bubbleStyles} initialImages={initialImages} />
 );
