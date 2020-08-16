@@ -37,13 +37,13 @@ const SwitchCircle = () => {
   return (
     <div style={wrapperStyle}>
       <CircleOne
-        src={'https://loremflickr.com/300/300?random=1'}
+        src={'https://picsum.photos/id/10/300/300'}
         isSwitched={switchCircle}
         styles={styleTwo}
         onClick={handleClick}
       />
       <CircleTwo
-        src={'https://loremflickr.com/300/300?random=2'}
+        src={'https://picsum.photos/id/20/300/300'}
         isSwitched={switchCircle}
         styles={styleOne}
         onClick={handleClick}
