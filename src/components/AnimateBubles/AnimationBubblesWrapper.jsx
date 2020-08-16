@@ -2,7 +2,7 @@ import React, { useState, createRef } from 'react';
 
 import AnimateBubbles from './AnimateBubbles';
 import Bubble from './Bubble';
-import { Button, AnimateBubblesContainer } from './styled';
+import { Button, AnimateBubblesContainer, Container } from './styled';
 import { moveItemToNextPosition } from '../../ulti/moveItemToNextPosition';
 
 const AnimationBubblesWrapper = ({ bubbleStyles, initialImages = [] }) => {
@@ -25,14 +25,12 @@ const AnimationBubblesWrapper = ({ bubbleStyles, initialImages = [] }) => {
   ));
 
   return (
-    <div>
+    <Container>
       <AnimateBubblesContainer>
         <AnimateBubbles>{bubbles}</AnimateBubbles>
       </AnimateBubblesContainer>
-      <div>
-        <Button onClick={handleClick}>move image to next position</Button>
-      </div>
-    </div>
+      <Button onClick={handleClick}>move image to next position</Button>
+    </Container>
   );
 };
 
